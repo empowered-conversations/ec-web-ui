@@ -273,7 +273,7 @@ header img {
 .bios .biocard h2 {
   max-width: 100%;
   margin-top: 7%;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: white;
 }
 @media (max-width: 500px) {
