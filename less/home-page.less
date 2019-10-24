@@ -6,7 +6,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: .5rem solid lightgray;
+    border-bottom: .6rem solid @home-b-border;
 
     @media @phone {
         max-width: 100%;
@@ -26,8 +26,8 @@
         }
 
         h2 {
-            color: white;
-            font-size: 5.5rem;
+            color:@home-mid-h2;
+            font-size: 6.5rem;
 
             @media @phone {
                 max-width: 100%;
@@ -37,7 +37,7 @@
         }
 
         h3 {
-            color: lightsalmon;
+            color: @home-mid-h3;
             font-size: 4.5rem;
             margin-top: 6%;
 
@@ -49,41 +49,42 @@
         }
 
         button {
-            background: lightgray;
+            background: @home-button-bg;
             vertical-align: top;
             margin-top: 10%;
             margin-bottom: 5%;
             padding: 3% 5%;
-            width: 60%;
+            width: 40%;
             font-size: 2rem;
-            border: .5rem double lightsalmon;
+            font-family: 'Jomolhari', serif;
             cursor: pointer;
+            color: @home-button-text;
+            border-radius: 10px;
 
             @media @phone {
                 width: 25%;
-                font-size: 1rem;
-                margin-top: 5%;
-                border: .25rem double lightsalmon;
+                font-size: .7rem;
+                margin-top: 5%;   
             }
 
             &:hover {
-                background: lightsalmon;
-                color: black;
-                border: .5rem double white;
+                background: @home-button-hovbg;
+                color: @home-button-hovtxt;
+                
             }
         }
     }
 
     img {
-        margin: 10% 10% 10% 0%;
-        width: 40%;
-        border: .6rem double lightgray;
+        margin: 7% 7% 7% 0%;
+        width: 45%;
+        border-radius: 10px;
 
         @media @phone {
             width: 100%;
             margin-left: 10%;
             margin-top: 0%;
-            border: .25rem double lightgray;
+            
         }
     }
 
@@ -95,26 +96,28 @@
    max-width: 100%;
    margin-top: 0;
    padding-top: 0;
-   background-color: lightsalmon;
+   background-color: @home-bot-bg;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: left;
    align-items: baseline;
    
 
    .text-content {
        max-width: 100%;
-       text-align: center;
+       
        
        h2 {
         max-width: 100%;
-        font-size: 3.5rem;
+        font-size: 4rem;
         padding: 2% 0%;
         margin-top: 2%;
-
-        /*@media @phone {
-            
-        } */
+        margin-left: 5%;
+        color: @home-bot-h2;
+        
+        @media @phone {
+            font-size: 2.5rem;
+        }
        }
 
        h5 {
@@ -123,9 +126,14 @@
         padding-bottom: 3%;
         display: flex;
         flex-wrap: wrap;
-        align-self: center;
         margin: 0% 5%;
+        color: @home-bot-h5;
+
+        @media @phone {
+        font-size: 1.2rem;
+        margin-bottom: 5%;
         }
+    }
         
        }
     }

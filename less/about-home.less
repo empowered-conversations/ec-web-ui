@@ -1,5 +1,5 @@
 .container {
-    background: lightsalmon;
+    background: @about-bg;
 }
 .bios {
     max-width: 100%;
@@ -7,40 +7,51 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+
     .biocard {
-        max-width: 35%;
+        max-width: 24%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: black;
-        border: .6rem double white;
-        margin: 5%;
+        background-color: @about-card-bg;
+        border-radius: 10px;
+        margin: 3%;
+
+        @media @phone {
+        max-width: 80%;
+        margin: 10%;
+        }
 
         h2 {
             max-width: 100%;
-            margin-top: 7%;
-            font-size: 3.5rem;
-            color: white;
+            margin-top: 10%;
+            font-size: 2.7rem;
+            color: @about-h2;
 
             @media @phone {
                 margin-top: 10%;
+                font-size: 1.6rem;
             }
         }
 
         p {
             margin-top: 2%;
             max-width: 100%;
-            color: lightsalmon;
+            color: @about-p;
             font-size: 2rem;
+            font-family: 'Jomolhari', serif;
 
+            @media @phone {
+                font-size: 1.3rem;
+            }
         }
 
         img {
             max-width: 50%;
             margin-top: 7%;
-            margin-bottom: 7%;
-            border: .25rem solid white;
+            margin-bottom: 10%;
+            border-radius: 10px;
 
             @media @phone {
                 margin-top: 10%;
