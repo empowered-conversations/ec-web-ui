@@ -1,0 +1,60 @@
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    width: 100%;
+    align-items: center;
+    border-bottom: .5rem solid lightsalmon;
+   
+    @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav {
+        display: flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            margin-right: 0%;
+            text-align: center;
+        }
+
+        a {
+            font-size: 2rem;
+            color: black;
+            text-decoration: none;
+
+            @media @phone {
+                margin-right: 0%;
+                width: 100%;
+                padding: 3% 2%;
+                box-sizing: border-box;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: lightsalmon;
+            }
+        }
+    }
+
+    img {
+        margin: 0% 0% 0% 4%;
+        max-width: 6%;
+
+        @media @phone {
+            display: none;
+        }
+    }
+}
+   
