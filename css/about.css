@@ -251,6 +251,9 @@ header img {
     display: none;
   }
 }
+.container {
+  background: lightsalmon;
+}
 .bios {
   max-width: 100%;
   display: flex;
@@ -264,12 +267,12 @@ header img {
   align-items: center;
   text-align: center;
   background-color: black;
-  border: 0.5rem solid lightgray;
-  margin: 0%;
+  border: 0.6rem double white;
+  margin: 5%;
 }
 .bios .biocard h2 {
   max-width: 100%;
-  margin-top: 5%;
+  margin-top: 7%;
   font-size: 3rem;
   color: white;
 }
@@ -279,14 +282,16 @@ header img {
   }
 }
 .bios .biocard p {
+  margin-top: 2%;
   max-width: 100%;
-  color: black;
+  color: lightsalmon;
   font-size: 2rem;
 }
 .bios .biocard img {
   max-width: 50%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  border: 0.25rem solid white;
 }
 @media (max-width: 500px) {
   .bios .biocard img {

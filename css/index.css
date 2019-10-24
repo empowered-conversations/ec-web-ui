@@ -309,7 +309,7 @@ header img {
   padding: 3% 5%;
   width: 60%;
   font-size: 2rem;
-  border: 0.5rem solid lightsalmon;
+  border: 0.5rem double lightsalmon;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -317,25 +317,25 @@ header img {
     width: 25%;
     font-size: 1rem;
     margin-top: 5%;
-    border: 0.25rem solid lightsalmon;
+    border: 0.25rem double lightsalmon;
   }
 }
 .cta .cta-text button:hover {
   background: lightsalmon;
   color: black;
-  border: 0.5rem solid white;
+  border: 0.5rem double white;
 }
 .cta img {
   margin: 10% 10% 10% 0%;
   width: 40%;
-  border: 0.5rem solid lightgray;
+  border: 0.6rem double lightgray;
 }
 @media (max-width: 500px) {
   .cta img {
     width: 100%;
     margin-left: 10%;
     margin-top: 0%;
-    border: 0.25rem solid lightgray;
+    border: 0.25rem double lightgray;
   }
 }
 .main-content {
@@ -350,18 +350,16 @@ header img {
 }
 .main-content .text-content {
   max-width: 100%;
+  text-align: center;
 }
 .main-content .text-content h2 {
   max-width: 100%;
   font-size: 3.5rem;
   padding: 2% 0%;
-  margin-left: 30%;
   margin-top: 2%;
-}
-@media (max-width: 500px) {
-  .main-content .text-content h2 {
-    margin-left: 10%;
-  }
+  /*@media @phone {
+            
+        } */
 }
 .main-content .text-content h5 {
   max-width: 100%;
@@ -370,5 +368,5 @@ header img {
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  margin-left: 8%;
+  margin: 0% 5%;
 }
