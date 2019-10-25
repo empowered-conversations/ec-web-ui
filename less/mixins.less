@@ -1,27 +1,27 @@
-/*
+
 //Mixins
 
-.flex-width-mixin {
-    display: flex;
-    width: 100%;
+
+.phone-width-center {
+    max-width: 100%;
+    align-content: center;
 }
 
-.button(@buttoncolor,@textcolor){
-    background: @buttoncolor;
-    color: @textcolor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    padding: 2% 4%;
-    font-size: 1.6rem;
-    border: 1px solid black;
-    border-radius: 5px;
+.button(@home-button-bg,@home-buttom-text) {
+    background: @home-button-bg;
+    vertical-align: top;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 2% 5%;
+    width: 48%;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: @home-button-text;
+    border-radius: 8px;
 }
 
-.phone-width-margin {
-    width: 95%;
-    margin-left: 2%;
-}
+  
 
-*/
+
+

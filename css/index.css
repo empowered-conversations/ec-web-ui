@@ -1,30 +1,7 @@
-/*
-//Mixins
-
-.flex-width-mixin {
-    display: flex;
-    width: 100%;
+.phone-width-center {
+  max-width: 100%;
+  align-content: center;
 }
-
-.button(@buttoncolor,@textcolor){
-    background: @buttoncolor;
-    color: @textcolor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    padding: 2% 4%;
-    font-size: 1.6rem;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.phone-width-margin {
-    width: 95%;
-    margin-left: 2%;
-}
-
-*/
 /*
 http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
@@ -160,7 +137,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 h1,
@@ -208,13 +185,11 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     margin-right: 0%;
     text-align: center;
-    margin: 3% 0%;
   }
 }
 header nav a {
@@ -226,10 +201,11 @@ header nav a {
 @media (max-width: 500px) {
   header nav a {
     width: 100%;
-    padding: 7% 2%;
+    padding: 3.5% 2%;
     box-sizing: border-box;
-    border-bottom: 2px solid coral;
+    border-bottom: 0.25rem solid coral;
     text-align: center;
+    font-size: 1.4rem;
   }
 }
 header nav a:hover {
@@ -249,7 +225,6 @@ header img {
 .cta {
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: space-evenly;
   border-bottom: 0.6rem solid #000000;
 }
@@ -262,9 +237,6 @@ header img {
 .cta .cta-text {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 0% 8%;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .cta .cta-text {
@@ -273,46 +245,59 @@ header img {
   }
 }
 .cta .cta-text h2 {
-  color: coral;
-  font-size: 6.5rem;
+  color: #000000;
+  font-size: 4rem;
+  text-align: left;
+  margin-top: 23%;
 }
 @media (max-width: 500px) {
   .cta .cta-text h2 {
     max-width: 100%;
-    align: center;
-    font-size: 2.5rem;
+    align-content: center;
+    font-size: 2.7rem;
+    margin-left: 5%;
+    margin-top: 4%;
   }
 }
 .cta .cta-text h3 {
   color: #000000;
-  font-size: 4.5rem;
+  font-size: 2.8rem;
   margin-top: 6%;
+  margin-bottom: 11.5%;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 500px) {
   .cta .cta-text h3 {
     max-width: 100%;
-    align: center;
+    align-content: center;
     font-size: 2rem;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    margin-top: 3%;
   }
 }
 .cta .cta-text button {
+  align-self: left;
   background: coral;
   vertical-align: top;
   margin-top: 10%;
   margin-bottom: 5%;
-  padding: 3% 5%;
-  width: 40%;
-  font-size: 2rem;
-  font-family: 'Jomolhari', serif;
+  padding: 2% 5%;
+  width: 48%;
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
-  color: #ffffff;
-  border-radius: 10px;
+  color: #000000;
+  border-radius: 8px;
 }
 @media (max-width: 500px) {
   .cta .cta-text button {
-    width: 25%;
-    font-size: 0.7rem;
+    width: 90%;
+    font-size: 1.5rem;
     margin-top: 5%;
+    padding: 1% 0%;
+    margin-left: 5%;
   }
 }
 .cta .cta-text button:hover {
@@ -320,14 +305,14 @@ header img {
   color: coral;
 }
 .cta img {
-  margin: 7% 7% 7% 0%;
-  width: 45%;
-  border-radius: 10px;
+  margin: 10% 0% 10% 5%;
+  width: 35%;
+  border-radius: 8px;
 }
 @media (max-width: 500px) {
   .cta img {
-    width: 100%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 0%;
   }
 }
@@ -349,26 +334,29 @@ header img {
   font-size: 4rem;
   padding: 2% 0%;
   margin-top: 2%;
-  margin-left: 5%;
-  color: #000000;
+  margin-left: 6%;
+  color: #ffffff;
 }
 @media (max-width: 500px) {
   .main-content .text-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    margin-top: 6%;
   }
 }
 .main-content .text-content h5 {
   max-width: 100%;
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding-bottom: 3%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0% 5%;
-  color: #000000;
+  margin: 0% 6% 6% 6%;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 500px) {
   .main-content .text-content h5 {
-    font-size: 1.2rem;
-    margin-bottom: 5%;
+    font-size: 1.5rem;
+    margin-bottom: 6%;
+    margin-top: 4%;
   }
 }

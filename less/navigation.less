@@ -16,19 +16,16 @@ header {
     }
     
     nav {
-        display: flex;
         width: 100%;
         display: flex;
         justify-content: space-around;
 
         @media @phone {
-            display: flex;
             flex-direction: column;
             width: 100%;
             align-items: center;
             margin-right: 0%;
             text-align: center;
-            margin: 3% 0%;
         }
 
         a {
@@ -38,12 +35,12 @@ header {
             font-family: 'Jomolhari', serif;
 
             @media @phone {
-                //margin-right: 0%;
                 width: 100%;
-                padding: 7% 2%;
+                padding: 3.5% 2%;
                 box-sizing: border-box;
-                border-bottom: 2px solid coral;
+                border-bottom: .25rem solid coral;
                 text-align: center;
+                font-size: 1.4rem;
             }
 
             &:hover {
