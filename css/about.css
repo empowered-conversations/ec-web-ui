@@ -219,6 +219,7 @@ header nav a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'Jomolhari', serif;
+  padding: 2% 0%;
 }
 @media (max-width: 500px) {
   header nav a {
@@ -230,13 +231,19 @@ header nav a {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 1000px) {
+  header nav a {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 800px) {
   header nav a {
-    flex-direction: column;
     width: 100%;
-    align-items: center;
-    margin-right: 0%;
+    padding: 3.5% 2%;
+    box-sizing: border-box;
+    border-bottom: 0.25rem solid coral;
     text-align: center;
+    font-size: 1.6rem;
   }
 }
 header nav a:hover {
@@ -248,6 +255,11 @@ header img {
   max-width: 6%;
 }
 @media (max-width: 500px) {
+  header img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
   header img {
     display: none;
   }
@@ -282,6 +294,12 @@ header img {
     margin: 10% 17%;
   }
 }
+@media (max-width: 1000px) {
+  .bios .biocard {
+    max-width: 35%;
+    margin: 10% 5%;
+  }
+}
 @media (max-width: 800px) {
   .bios .biocard {
     max-width: 80%;
@@ -295,6 +313,12 @@ header img {
   color: #000000;
 }
 @media (max-width: 500px) {
+  .bios .biocard h2 {
+    margin-top: 10%;
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 1000px) {
   .bios .biocard h2 {
     margin-top: 10%;
     font-size: 2.3rem;
@@ -320,6 +344,11 @@ header img {
   border-radius: 8px;
 }
 @media (max-width: 500px) {
+  .bios .biocard img {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 1000px) {
   .bios .biocard img {
     margin-top: 10%;
   }

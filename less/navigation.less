@@ -47,6 +47,7 @@ header {
             color: @nav-text;
             text-decoration: none;
             font-family: 'Jomolhari', serif;
+            padding: 2% 0%;
 
             @media @phone {
                 width: 100%;
@@ -57,12 +58,17 @@ header {
                 font-size: 1.4rem;
             }
 
+            @media @between {
+                font-size: 2rem;
+            }
+
             @media @tablet {
-                flex-direction: column;
                 width: 100%;
-                align-items: center;
-                margin-right: 0%;
+                padding: 3.5% 2%;
+                box-sizing: border-box;
+                border-bottom: .25rem solid coral;
                 text-align: center;
+                font-size: 1.6rem;
             }
 
             &:hover {
@@ -79,7 +85,9 @@ header {
         @media @phone {
             display: none;
         }
-
+        @media @between {
+            display: none;
+        }
         @media @tablet {
             display: none;
         }

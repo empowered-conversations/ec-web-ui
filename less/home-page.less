@@ -11,7 +11,10 @@
         max-width: 100%;
         flex-direction: column;
     }
-
+    @media @between {
+        max-width: 100%;
+        flex-direction: column;
+    }
     @media @tablet {
         max-width: 100%;
         flex-direction: column;
@@ -25,6 +28,12 @@
             max-width: 100%;
             padding: 6% 1% 4% 1%
         }
+
+        @media @between {
+            max-width: 100%;
+            padding: 6% 1% 4% 1%
+        }
+
         @media @tablet {
             max-width: 100%;
             padding: 6% 1% 4% 1%
@@ -38,10 +47,18 @@
 
             @media @phone {
                 .phone-width-center();
-                font-size: 2.7rem;
+                font-size: 2.4rem;
                 margin-left: 5%;
                 margin-top: 4%;
             }
+
+            @media @between {
+                .phone-width-center();
+                font-size: 4.5rem;
+                margin-left: 5%;
+                margin-top: 4%;
+            }
+
 
             @media @tablet {
                 .phone-width-center();
@@ -62,7 +79,16 @@
 
             @media @phone {
                 .phone-width-center();
-                font-size: 2rem;
+                font-size: 1.8rem;
+                margin-left: 5%;
+                margin-bottom: 4%;
+                margin-top: 3%;
+
+            }
+
+            @media @between {
+                .phone-width-center();
+                font-size: 3rem;
                 margin-left: 5%;
                 margin-bottom: 4%;
                 margin-top: 3%;
@@ -84,6 +110,13 @@
             .button(@coral, @white);
 
             @media @phone {
+                width: 90%;
+                font-size: 1.5rem;
+                margin-top: 5%; 
+                padding: 1% 0%;  
+                margin-left: 5%;
+            }
+            @media @between {
                 width: 90%;
                 font-size: 1.5rem;
                 margin-top: 5%; 
@@ -113,6 +146,13 @@
         border-radius: 8px;
 
         @media @phone {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 0%;
+            
+        }
+
+        @media @between {
             width: 90%;
             margin-left: 5%;
             margin-top: 0%;
@@ -155,7 +195,7 @@
         color: @home-bot-h2;
         
         @media @phone {
-            font-size: 2.7rem;
+            font-size: 2.4rem;
             margin-top: 6%;
         }
         @media @tablet {
@@ -175,7 +215,7 @@
         font-family: 'Roboto', sans-serif;
 
         @media @phone {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-bottom: 6%;
         margin-top: 4%;
         }
