@@ -246,9 +246,9 @@ header img {
 }
 .cta .cta-text h2 {
   color: #000000;
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: left;
-  margin-top: 23%;
+  margin-top: 28%;
 }
 @media (max-width: 500px) {
   .cta .cta-text h2 {
@@ -261,9 +261,9 @@ header img {
 }
 .cta .cta-text h3 {
   color: #000000;
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-top: 6%;
-  margin-bottom: 11.5%;
+  margin-bottom: 22%;
   text-align: left;
   font-family: 'Roboto', sans-serif;
 }
@@ -331,7 +331,7 @@ header img {
 }
 .main-content .text-content h2 {
   max-width: 100%;
-  font-size: 4rem;
+  font-size: 4.5rem;
   padding: 2% 0%;
   margin-top: 2%;
   margin-left: 6%;
@@ -345,7 +345,7 @@ header img {
 }
 .main-content .text-content h5 {
   max-width: 100%;
-  font-size: 1.75rem;
+  font-size: 2.3rem;
   padding-bottom: 3%;
   display: flex;
   flex-wrap: wrap;
